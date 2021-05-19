@@ -1,6 +1,6 @@
 # Parthenon
 
-A tool for online learning on the topic of Greek Mythology. 
+A tool for online learning on the topic of Greek Mythology, written in C# and SQL using Visual Studio.
 
 Current language support: Romanian
 System requirements:
