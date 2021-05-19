@@ -1,0 +1,7 @@
+language: RO;
+profile_picture: N/A;
+gender: M;
+birth_date: 01/01/2000;
+edit_rights: false;
+tutorials: true;
+start_tutorial: true;

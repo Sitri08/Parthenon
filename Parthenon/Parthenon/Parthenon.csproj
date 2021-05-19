@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03300D2C-37D3-4EA7-AA7C-53F3CCDC431D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Parthenon</RootNamespace>
+    <AssemblyName>Parthenon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassParthenon.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormZei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZei.Designer.cs">
+      <DependentUpon>FormZei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCont.Designer.cs">
+      <DependentUpon>FormCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeschidere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeschidere.Designer.cs">
+      <DependentUpon>FormDeschidere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHangman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHangman.Designer.cs">
+      <DependentUpon>FormHangman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInvata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInvata.Designer.cs">
+      <DependentUpon>FormInvata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonsters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonsters.Designer.cs">
+      <DependentUpon>FormMonsters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlayVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlayVideo.Designer.cs">
+      <DependentUpon>FormPlayVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQuiz.Designer.cs">
+      <DependentUpon>FormQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistici.Designer.cs">
+      <DependentUpon>FormStatistici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZei.resx">
+      <DependentUpon>FormZei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCont.resx">
+      <DependentUpon>FormCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDeschidere.resx">
+      <DependentUpon>FormDeschidere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHangman.resx">
+      <DependentUpon>FormHangman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInvata.resx">
+      <DependentUpon>FormInvata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonsters.resx">
+      <DependentUpon>FormMonsters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlayVideo.resx">
+      <DependentUpon>FormPlayVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQuiz.resx">
+      <DependentUpon>FormQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistici.resx">
+      <DependentUpon>FormStatistici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_settings.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button default.jpg" />
+    <None Include="Resources\button hover.jpg" />
+    <None Include="Resources\form background.jpg" />
+    <None Include="Resources\profile_default.png" />
+    <None Include="Resources\gods.png" />
+    <None Include="Resources\fire.png" />
+    <None Include="Resources\lightning.png" />
+    <None Include="Resources\balance.png" />
+    <None Include="Resources\olympians.png" />
+    <None Include="Resources\olympians1.png" />
+    <None Include="Resources\hestia.jpg" />
+    <None Include="Resources\Demeter.jpg" />
+    <None Include="Resources\Hera.jpg" />
+    <None Include="Resources\Aphrodite.jpg" />
+    <None Include="Resources\Apollo.jpg" />
+    <None Include="Resources\Ares.jpg" />
+    <None Include="Resources\Artemis.jpg" />
+    <None Include="Resources\Athene.jpg" />
+    <None Include="Resources\Demeter1.jpg" />
+    <None Include="Resources\Dionysus.jpg" />
+    <None Include="Resources\Hades.jpg" />
+    <None Include="Resources\Hephaistus.jpg" />
+    <None Include="Resources\Hera1.jpg" />
+    <None Include="Resources\Hermes.jpg" />
+    <None Include="Resources\hestia1.jpg" />
+    <None Include="Resources\Poseidon.jpg" />
+    <None Include="Resources\Zeus.jpg" />
+    <Content Include="GodsDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GodsDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>GodsDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\arachne_thumbnail.jpg" />
+    <None Include="Resources\midas_thumbnail.jpg" />
+    <None Include="Resources\ErosPsyche.jpg" />
+    <None Include="Resources\arachne_thumbnail1.jpg" />
+    <None Include="Resources\ErosPsyche1.jpg" />
+    <None Include="Resources\midas_thumbnail1.jpg" />
+    <None Include="Resources\quiz.png" />
+    <None Include="Resources\hangman.jpg" />
+    <None Include="Resources\hangman.png" />
+    <None Include="Resources\hangman1.jpg" />
+    <None Include="Resources\hangman2.jpg" />
+    <None Include="Resources\hangman3.jpg" />
+    <None Include="Resources\hangman4.jpg" />
+    <None Include="Resources\hangman5.jpg" />
+    <None Include="Resources\hangman6.jpg" />
+    <Content Include="User.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="User_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>User.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
